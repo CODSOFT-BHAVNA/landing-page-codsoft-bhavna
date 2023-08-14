@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>creative codsoft</title>
+</head>
+  
+<body>
+    <nav>
+        <div class="heading">
+            Landing Page
+        </div>
+        <span class="sideMenuButton" 
+            onclick="openNavbar()">
+            ☰
+            <div class="box112">
+                <img src="data:image/jpeg;base64,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"
+        width="500">
+            </div>
+            
+            >
+        </span>
+  
+        <div class="navbar">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">log in</a></li>
+            </ul>
+        </div>
+    </nav>
+  
+    <!-- Side navigation bar for 
+        responsive website -->
+    <div class="sideNavigationBar" 
+        id="sideNavigationBar">
+        <a href="#" class="closeButton" 
+            onclick="closeNavbar()">
+            
+        </a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">gallery</a>
+        <a href="#">Tools</a>
+    </div>
+  
+    <!-- Content -->
+    <div class="line" id="Home">
+        <div class="side1">
+            <h1>CODSOFT</h1>
+            <h1>FORCES</h1>
+            <h3>
+                The Army is a powerful fighting force defending and serving our nation by land, sea and air. 
+                <br
+                Elite groups within the Army, such as the Army Rangers and Special Forces, receive specialized 
+                
+                <br
+                 for advanced combat situations.
+                </h3>
+            <button>
+                <a href="https/google.com">
+                    Explore More
+                </a>
+            </button>
+        </div>
+        <div class="side2">
+            <img src="https://media3.giphy.com/media/f7RZH9i1e06JfuPCyv/200w.gif?cid=790b7611lvoj17xtep81iocaq7vpt3pek4h1umqulqbwx7oa&ep=v1_gifs_search&rid=200w.gif&ct=g"
+                
+               width="500">
+        </div>
+        <div class="box12">
+             <img src="https://w0.peakpx.com/wallpaper/676/915/HD-wallpaper-rafale-air-force-army-fighter-jet-jet-plane-war.jpg"
+              width="500"
+              height="500">
+         </div>
+    </div>
+  
+    <section class="about" id="My Projects">
+        <div class="content">
+            <div class="title">
+                <span>CODSOFT FORCES</span>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <div class="topic">
+                        <a href="" target="_blank">
+                           LIFE IN CODSOFT
+                        </a>
+                    </div>
+                    <p>
+                        As an Officer, a warrior, in the CODSOFT Force, you’re tasked with upholding
+                        the constitution and protecting India’s freedom. The responsibility is enormous,
+                        but its not only about work its also about living well.
+                    </p>
+                </div>
+                <div class="box">
+  
+                    <div class="topic">
+                        <a href="" target="_blank">
+                          SELECTION
+                        </a>
+                    </div>
+                    <p>
+                        Explore selection process to be an Indian Air Force Officer.
+                        Selection depends on how you perform in written tests, interviews,
+                        medical fitness test and All India merit list.
+                    </p>
+                </div>
+  
+                <div class="box">
+                    <div class="topic">
+                        <a href="" target="_blank">
+                          CAREER
+                        </a>
+                    </div>
+                    <p>
+                        An officer is a member of an armed force or uniformed service who holds a position of authority.
+                        To be able to lead and control, requires the ability to motivate yourself, 
+                        inspire others and make tough decisions efficiently.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+    <section class="contact" id="contact">
+        <div class="content">
+            <div class="title"><span>Sign Up</span></div>
+            <div class="contactMenu">
+                <div class="input1">
+                    <div class="label1">Your Name</div>
+                    <div class="input2">
+                        <input type="text" 
+                            placeholder="Enter your Name here">
+                    </div>
+                    <div class="label1">
+                        <label>Your Email</label>
+                    </div>
+                    <div class="input2">
+                        <input type="text" 
+                            placeholder="Enter your Email here">
+                    </div>
+                    <div class="label1">
+                        <label>Your Password</label>
+                    </div>
+                    <div class="input2">
+                        <input type="text" 
+                            placeholder="Enter your Password here">
+                    </div>
+                    <div class="button">
+                    <button>Sign Up</button>
+                    </div>
+                </div>
+                <div class="input3">
+                    <div class="rightside1">
+                        <div class="title1">
+                            <span>
+                                Contact Us
+                            </span>
+                        </div>
+                        <div class="content1">
+                            A-143, 9th Floor, Sovereign 
+                            Corporate Tower, Sector-136, 
+                            Noida, Uttar Pradesh - 201305
+                        </div>
+                        <div class="title1">
+                            <span>More Information</span>
+                            <br>
+                            <button> instagram</button>
+                            <br>
+                            <button>twitter</button>
+                            <br>
+                            <button>facebook</button>
+                            <br>7350######
+
+                            
+                        </div>
+                        <div class="content1">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer section -->
+    <footer>
+        <div class="footer">
+            <span>
+                Created By
+                <a href="#" 
+                    target="_blank">
+                    codsoft ruhella
+                </a>
+            </span>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+  
+</html>
+
+
